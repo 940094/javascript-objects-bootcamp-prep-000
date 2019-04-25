@@ -20,7 +20,8 @@ var playlist = {  // a playlist with artist and song key-value pairs
 };
 
 function updatePlaylist(object, artist, song) {
-  var new_playlist = Object.assign({}, object, {artist : song})
+  
+  // var new_playlist = Object.assign({}, object, {artist : song})
   // Object.assign({}, playlist, { shins: 'hippie jam'})
-  return new_playlist
+  return Object.assign(object, {artist : song})
 }
