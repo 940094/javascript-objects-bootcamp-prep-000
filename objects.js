@@ -25,3 +25,7 @@ function updatePlaylist(object, artist, song) {
   // Object.assign({}, playlist, { shins: 'hippie jam'})
   return object[artist] = song;
 }
+
+function removeFromPlaylist(object, artist) {
+  return delete object.artist
+}
